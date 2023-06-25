@@ -1,14 +1,17 @@
 import ProductCard from '@/components/ProductCard'
-import React from 'react'
 import p1 from "public/p1.png"
-import p2 from "public/p2.png"
+import p4 from "public/p4.png"
 import p3 from "public/p3.png"
+import {Products} from "@/utils/mock"
 const ProductListing = () => {
+  const productChunks = Products.slice(0,3)
   return (
-    <div className='flex justify-evenly'>
-        <ProductCard title='Brushed Raglan Sweatshirt' price={100} img={p1}/>
-        <ProductCard title='Cameryn Sash Tie Dress' price={50} img={p2}/>
-        <ProductCard title='Flex Sweatshirt' price={80} img={p3} />
+    <div className='flex justify-evenly '>
+      {
+        productChunks.map((items)=>(
+          <ProductCard key={items.id} title={items.title} id={items.id} price={items.price} img={items.image} />
+        ))
+        }
     </div>
   )
 }
