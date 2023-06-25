@@ -15,7 +15,7 @@ const Hero = () => {
       <p className="leading-7 [&:not(:first-child)]:mt-6">
       Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.
       </p>
-      <Button className="bg-black  mt-4">Start Shopping</Button>
+      <Button className="bg-sky-500 hover:bg-sky-600  mt-4">Start Shopping</Button>
 
         </div>
         {/* Right Side Hero Section Image */}
