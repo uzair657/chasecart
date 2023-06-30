@@ -14,7 +14,7 @@ export default function Page({ params }: { params: { id: string } }) {
     return  <div className="flex  mt-16 py-10">
       {
        result.map((items)=>(
-        <div key={items.id} className="flex justify-between  w-full ">
+        <div  className="flex justify-between  w-full ">
           <div className="w-[15%]">
           <Image src={items.image} alt={items.title} width={100} height={100}/>
           </div>
