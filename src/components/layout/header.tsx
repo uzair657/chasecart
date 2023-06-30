@@ -7,7 +7,7 @@ import {ShoppingCart} from "lucide-react"
 export default function Header(){
     return(
         
-<nav className="cursor-pointer py-4 px-28 items-center bg-white sticky top-0 z-50  shadow dark:bg-gray-900 dark:border-gray-700">
+<nav className="cursor-pointer py-4 px-20 items-center bg-white sticky top-0 z-50  shadow dark:bg-gray-900 dark:border-gray-700">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <Link href={"/"}>
          <Image src={logo} alt="ChaseCart" className=" w-24"/>
@@ -40,7 +40,7 @@ export default function Header(){
         </li>
       </ul>
     </div>
-    <div className="h-12 w-12  rounded-full bg-gray-200 flex justify-center items-center relative">
+    <div className="h-12 w-12  rounded-full bg-gray-200 flex justify-center items-center relative hover:scale-110 duration-500 cursor-pointer">
          <span className="absolute right-1 top-0 rounded-md bg-sky-500 h-5 w-5 text-white  text-center text-sm">
            0
          </span>
