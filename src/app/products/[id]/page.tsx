@@ -14,7 +14,7 @@ export default function Page({ params }: { params: { id: string } }) {
     return  <div className="flex  mt-16 py-10">
       {
        result.map((items)=>(
-        <div  className="flex justify-between  w-full ">
+        <div key={items.id} className="flex justify-between  w-full ">
           <div className="w-[15%]">
           <Image src={items.image} alt={items.title} width={100} height={100}/>
           </div>
@@ -35,8 +35,9 @@ export default function Page({ params }: { params: { id: string } }) {
             </h3>
             <div className="flex gap-x-3">
             {
-              size.map((mysize)=>(
-                <div className="flex cursor-pointer items-center justify-center w-7 h-7 mt-2 duration-300 border rounded-full hover:shadow-xl ">
+              size.map((mysize,i)=>(
+                console.log(i),
+                <div key={i}  className="flex cursor-pointer items-center justify-center w-7 h-7 mt-2 duration-300 border rounded-full hover:shadow-xl ">
                   <span className="text-[10px] font-semibold text-center text-gray-600 ">
                     {mysize}
                   </span>
