@@ -18,11 +18,11 @@ export default function Page({ params }: { params: { id: string } }) {
           <div className="w-[15%]">
           <Image src={items.image} alt={items.title} width={100} height={100}/>
           </div>
-        <div className="w-[70%]">
+        <div className="w-[70%] md:w-[55%]">
           <Image src={items.image} alt={items.title} width={600} height={600}/>
         </div>
         {/* Right Content Side */}
-        <div className="w-[40%]">
+        <div className="w-[40%] md:w-[30%]">
           <div>
           <h2 className="capitalize font-semibold text-2xl text-black">{items.title}</h2>
           <p className="capitalize text-gray-400 font-semibold text-lg">{items.tagline} </p>
@@ -36,7 +36,6 @@ export default function Page({ params }: { params: { id: string } }) {
             <div className="flex gap-x-3">
             {
               size.map((mysize,i)=>(
-                console.log(i),
                 <div key={i}  className="flex cursor-pointer items-center justify-center w-7 h-7 mt-2 duration-300 border rounded-full hover:shadow-xl ">
                   <span className="text-[10px] font-semibold text-center text-gray-600 ">
                     {mysize}
