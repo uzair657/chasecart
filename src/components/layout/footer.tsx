@@ -91,7 +91,7 @@ const footer = () => {
                 <Link href={"/"}>Terms of Service</Link>
               </li>
               <li>
-                <Link href={"/"}>FAQ'S</Link>
+                <Link href={"/"}>FAQS</Link>
               </li>
             </ul>
           </div>
@@ -161,8 +161,14 @@ const footer = () => {
         </div>
       </div>
       <div className="py-6 text-sm text-center dark:text-gray-400">
-        © 2023 <Link href={"https://github.com/uzair657"} className="hover:text-sky-500 cursor-pointer">Uzair Ahmad</Link> .
-        All rights reserved.
+        © 2023{" "}
+        <Link
+          href={"https://github.com/uzair657"}
+          className="hover:text-sky-500 cursor-pointer"
+        >
+          Uzair Ahmad
+        </Link>{" "}
+        . All rights reserved.
       </div>
     </footer>
   );
