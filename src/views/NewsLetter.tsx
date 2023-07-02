@@ -1,35 +1,38 @@
 import React from "react";
-
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 const Newsletter = () => {
   //   const handleSubmit = (event) => {
   //     event.preventDefault();
   //   };
 
   return (
-    <section className="flex flex-col justify-center items-center text-center relative z-[1] mt-4 mb-8">
-      <div className="font-bold  absolute -z-[1] text-[7rem] text-[#f2f3f7] ">
+    <div className="flex justify-center relative z-10 items-center flex-col text-center px-5 md:px-40 py-20 md:py-32">
+      <div className="text-6xl md:text-9xl mt-10 tracking-wide text-[#f2f3f7] absolute font-extrabold z-0">
         Newsletter
       </div>
-      <h1 className="mb-4 font-semibold text-[#212121] text-[2rem] leading-10 tracking-[0.03em]">
+      <h2 className="scroll-m-20 pb-2 text-2xl md:text-4xl font-semibold transition-colors first:mt-0 z-20 tracking-wide">
         Subscribe Our Newsletter
-      </h1>
-      <p className="mb-8 text-base text-[#212121]">
+      </h2>
+      <p className="flex text-lg font-light z-20 tracking-wide">
         Get the latest information and promo offers directly
       </p>
-      <form>
-        <input
-          type="email"
-          placeholder="Input email address"
-          className="bg-[#FCFCFC] border border-gray-400 pt-2 pr-[7.5rem] pb-2 pl-5 mb-4"
-        ></input>
-        <button
-          type="submit"
-          className="ml-2.5  bg-white text-sm font-semibold py-2.5 px-5   border border-sky-500 text-sky-500 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white "
-        >
-          Get Started
-        </button>
+      <form className="z-20">
+        <div className="flex w-full max-w-sm items-center space-x-3 pt-5">
+          <Input
+            type="email"
+            placeholder="Input Email Address"
+            className="flex border border-gray-900"
+          />
+          <Button
+            type="submit"
+            className="px-[10px] py-5 w-40 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white"
+          >
+            Get Started
+          </Button>
+        </div>
       </form>
-    </section>
+    </div>
   );
 };
 

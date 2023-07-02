@@ -6,13 +6,12 @@ import { ShoppingCart } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Fragment } from "react";
-import { useState } from "react";
 
 export default function Header() {
   return (
     <Popover className="flex cursor-pointer bg-white justify-between py-6 px-20 items-center  sticky top-0 z-50  shadow">
       <Link href={"/"}>
-        <Image src={logo} alt="ChaseCart" className=" w-24" />
+        <Image src={logo} alt="ChaseCart" className=" w-32" />
       </Link>
       <div className="">
         <div className="hidden sm:flex gap-x-10 items-center">
